@@ -7,21 +7,147 @@
 </head>
 <body>
     
-    <header>
-        <!--This is a navagation bar -->
-    <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="apparatuses.html">Apparatuses</a></li>
-        </ul>
+  <header>
+    <!--This is a navagation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="apparatuses.html">Apparatuses</a></li>
+    </ul>
     </nav>
     <h1>Rhythmic Gymnastics Apparatuses</h1>
     </header>
     <main>
-        <h2>Apparatuses</h2>
-        <p>
-            There are 5 different apparatuses
-        </p>
+      <img src="images/rhythmicgymnasticsapparatuses.jpg" width="75%" alt="Rhythmic gymnastics apparatuses" />
+      <h2>Apparatuses</h2>
+        <p>There are 5 different apparatuses </p>
+      <ul>
+        <li>Rope</li>
+        <li>Ball</li>
+        <li>Hoop</li>
+        <li>Clubs</li>
+        <li>Ribbon</li>
+        </ul>
+        <br/>
+        <h3>Ball</h3>
+        <img src="images/rhythmicgymnasticsball.jpg" width="50%" alt="Rhythmic gymnastics ball" />
+        <br/>
+        <ul>
+          <li>
+            <b>Material & Specs:</b> Rubber or synthetic material, with a diameter of 18-20 cm and a minimum weight of 400 grams. 
+          </li>
+          <li>
+            <b>Techniques:</b> Smooth rolls, bounces, throws, and catches. The ball should rest naturally on the hand or body 
+              <i>without being gripped by the fingers</i>.
+          </li>
+          <li>
+            Demands: Flexibility, grace, and smooth movements. 
+          </li>
+        </ul>
+        <br/>
+        <h3>Hoop</h3>
+        <img src="images/rhythmicgymnasticshoop.jpg" width="50%" alt="Rhythmic gymnastics hoop" />
+        <br/>
+        <ul>
+          <li>
+            <b>Material & Specs:</b> Plastic or wood, with an interior diameter of 80-90 cm (proportional 
+            to the gymnast's height) and a minimum weight of 300 grams.
+          </li>
+          <li>
+            Techniques: Rolling, spinning, throwing, catching, swinging, and passing through the hoop.
+          </li>
+          <li>
+            Demands: Coordination, flexibility, and control.
+          </li>
+        </ul>
+        <br/>
+        <h3>Clubs</h3>
+        <img src="images/rhythmicgymnasticsclubs.jpg" width="50%" alt="Rhythmic gymnastics clubs"/>
+        <br/>
+        <ul>
+          <li>
+            <b>Material & Specs:</b> Wood or synthetic material, measuring 40-50 cm long and weighing at least 150 grams each.
+          </li>
+          <li>
+            Techniques: Small circles, figure eights, rotations, throws, and catches.
+          </li>
+          <li>
+            Demands: Good hand-eye coordination, precision, and the ability to use both hands.
+          </li>
+        </ul>
+        <br/>
+        <h3>Ribbon</h3>
+        <img src="images/rhythmicgymnasticsribbon.jpg" width="50%" alt="Rhythmic gymnastics ribbon"/>
+        <br/>
+        <ul>
+          <li>
+            <b>Material & Specs:</b> Satin or similar fabric, <u>at least 6 meters long</u> and 4-6 cm wide, attached to a stick 
+            measuring 50-60 cm.
+          </li>
+          <li>
+            Techniques: Continuous movements that create waves, spirals, and circles in the air.
+          </li>
+          <li>
+            Demands: Coordination, flexibility, and good control of the ribbon.
+          </li>
+        </ul>
+        <br/>
+        <h3>Rope</h3>
+        <img src="images/rhythmicgymnasticsrope.jpg" width="50%" alt="Rhythmic gymnastics rope"/>
+        <br/>
+        <ul>
+          <li>
+            <b>Material & Specs:</b> Hemp or synthetic fibers, cut and sized proportionally to the gymnast's height.
+          </li>
+          <li>
+            Techniques: Jumping, skipping, swinging, spinning, and throwing the rope into the air.
+          </li>
+          <li>
+            Demands: Speed, agility, and good timing.
+          </li>
+        </ul>
+        <br/>
+        <h2>Rhythmic Gymnastics Survey</h2>
+        <form name="Rhythmic-Gymnastics-Survey" id="GymnasticsSurvey" method="get">
+            <fieldset>
+            <legend>What's your name</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required/>
+            </fieldset>
+            <fieldset>
+            <legend>What are your favorite apparatuses?</legend>
+            <input type="checkbox" name="apparatus" id="ribbon" value="ribbon">
+            <label for="ribbon">Ribbon</label>
+            <br/>
+            <input type="checkbox" name="apparatus" id="ball" value="ball">
+            <label for="ball">Ball</label>
+            <br/>
+            <input type="checkbox" name="apparatus" id="hoop" value="hoop">
+            <label for="hoop">Hoop</label>
+            <br/>
+            <input type="checkbox" name="apparatus" id="clubs" value="clubs">
+            <label for="clubs">Clubs</label>
+            <br/>
+            <input type="checkbox" name="apparatus" id="rope" value="rope">
+            <label for="rope">Rope</label>
+            </fieldset>
+            <fieldset>
+                <legend>Have you ever tried rhythmic gymnastics?</legend>
+                <input type="radio" id="yes" name="experience" value="yes" required>
+                <label for="yes">Yes</label>
+                <br/>
+                <input type="radio" id="no" name="experience" value="no">
+                <label for="no">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>How interested are you in rhythmic gymnastics?</legend>
+                <label for="interest">Rate your interest from 1 to 10:</label>
+                <input type="range" id="interest" name="interest" min="1" max="10" value="5">
+            </fieldset>
+            <br/>
+            <br/>
+            <input type="submit" value="Submit">
+        </form>
     </main>
 </body>
 </html>
